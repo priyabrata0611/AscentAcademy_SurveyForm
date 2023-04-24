@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>AscentAcademy_Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+   <strong> <h1 id="title">ASCENT ACADEMY SURVEY FORM</h1></strong>
+    <form id="survey-form" action="/">  
+      <fieldset id="profile-information">      
+        <label id="name-label" for="name"> Name
+          <input id ="name" class="input-area" type="text" placeholder="Enter your name" required>
+        </label>
+        
+        <label id="email-label" for="email"> Email
+          <input id="email" class="input-area" type="email" placeholder="Enter your Email" required>
+        </label>    
+        <label id="number-label" for="number"> Age
+          <input id="number" class="input-area" type="number" min="17" max="120" placeholder="Age">
+        </label>
+        <label for="dropdown">Which option best describes your current role?
+          <select id="dropdown" class="input-area">
+            <option disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full time Job</option>
+            <option value="full time learner">Full time Learner</option>
+            <option value="prefer not say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset >Would you recommend Ascent Academy to a friend?     
+        <label for="">
+          <input type="radio" id="definitelyChoice" name="rateChoice" value="1" checked/> Definitely
+        </label>
+        <label for="">
+          <input type="radio" id="maybeChoice" name="rateChoice" value="2"/> Maybe
+        </label>
+        <label for="">
+          <input type="radio" id="notSureChoice" name="rateChoice" value="3"/> Not Sure
+        </label>
+        <label for="dropdown2">What is your favorite feature of  Ascent Academy ?
+          <select id="dropdown2" class="input-area">
+            <option selected disabled>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open source">Open Source</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset id="fcc-interest"> What you want us to improve?
+        <label for="front-end-projects">
+        <input type="checkbox" name="fcc-interest" id="front-end-projects" value="front-end"/> Front-end Projects
+        </label>
+        <label for="back-end-projects"> 
+        <input type="checkbox" name="fcc-interest" id="back-end-projects" value="back-end"/> Back-end Projects
+        </label>
+        <label for="Videos">
+        <input type="checkbox" name="fcc-interest" id="Videos" value="videos"/> Videos
+        </label>
+        <label for="forum">
+        <input type="checkbox" name="fcc-interest" id="forum" value="forum"/> Forum
+        </label>
+        </fieldset>
+      <fieldset id="sugestions">
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" placeholder="Enter Your suggestions here..." rows="5"></textarea>
+        </label>
+      </fieldset>    
+      <input type="submit" value="Submit" id="submit"/>  
+    </form> 
+  </body>
+</html>
